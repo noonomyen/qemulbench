@@ -13,3 +13,6 @@
 [submodule "sources/sysbench"]
 	path = sources/sysbench
 	url = https://github.com/akopytov/sysbench
+[submodule "sources/busybox"]
+	path = sources/busybox
+	url = https://github.com/vda-linux/busybox_mirror.git
