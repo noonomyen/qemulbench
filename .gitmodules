@@ -1,0 +1,15 @@
+[submodule "sources/linux"]
+	path = sources/linux
+	url = https://github.com/torvalds/linux
+[submodule "sources/qemu"]
+	path = sources/qemu
+	url = https://github.com/qemu/qemu
+[submodule "sources/7zip"]
+	path = sources/7zip
+	url = https://github.com/ip7z/7zip
+[submodule "sysbench"]
+	path = sources/sysbench
+	url = https://github.com/akopytov/sysbench
+[submodule "sources/sysbench"]
+	path = sources/sysbench
+	url = https://github.com/akopytov/sysbench
