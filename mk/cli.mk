@@ -9,9 +9,7 @@ cli-x86_64:
 	 cargo build --release --target x86_64-unknown-linux-musl
 	@mkdir -p out target/release
 	@cp target/x86_64-unknown-linux-musl/release/qemulbench target/release/qemulbench-x86_64
-	@cp target/x86_64-unknown-linux-musl/release/qemulbench target/release/qemulbench
 	@cp target/x86_64-unknown-linux-musl/release/qemulbench out/qemulbench-x86_64
-	@cp target/x86_64-unknown-linux-musl/release/qemulbench out/qemulbench
 
 cli-aarch64:
 	@CC_aarch64_unknown_linux_musl=aarch64-linux-gnu-gcc \

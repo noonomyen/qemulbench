@@ -12,7 +12,5 @@ docker-extract: docker-build
 	 docker cp $$id:/qemulbench-x86_64 out/qemulbench-x86_64 && \
 	 docker cp $$id:/qemulbench-aarch64 out/qemulbench-aarch64 && \
 	 docker rm -v $$id
-	@cp out/qemulbench-x86_64 out/qemulbench
 	@cp out/qemulbench-x86_64 target/release/qemulbench-x86_64
 	@cp out/qemulbench-aarch64 target/release/qemulbench-aarch64
-	@cp out/qemulbench target/release/qemulbench
