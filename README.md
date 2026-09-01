@@ -4,15 +4,11 @@ Standalone static CLI benchmark orchestrator for Linux (`x86_64` and `aarch64`).
 
 `qemulbench` embeds minimal Linux kernels, static root filesystems (BusyBox, Sysbench, 7-Zip), and static QEMU payloads into a single standalone Musl binary. It requires no external dependencies on the target host.
 
----
-
 ## Execution Modes
 
 * **`native`**: Executes commands directly in the embedded rootfs using unprivileged mount/user namespace chroot.
 * **`user`**: Runs cross-architecture binaries via QEMU user-space emulation (`-L <rootfs>`).
 * **`system`**: Boots a minimal Linux virtual machine (MicroVM on `x86_64` or Virt on `aarch64`) via KVM or TCG.
-
----
 
 ## Command Reference and Examples
 
@@ -74,8 +70,6 @@ qemulbench system x86_64 kvm -m ./workdir:/mnt/workdir -- /mnt/workdir/test.sh
 qemulbench system x86_64 kvm
 ```
 
----
-
 ## Building
 
 All compiled binaries are placed into `./out/`:
@@ -102,8 +96,6 @@ docker build -t qemulbench .
 make docker-extract    # Extracts built binaries into ./out/
 ```
 
----
-
 ## Testing
 
 Run the functional smoke test suite:
@@ -111,8 +103,6 @@ Run the functional smoke test suite:
 ```bash
 ./scripts/test_all.sh ./out/qemulbench-x86_64
 ```
-
----
 
 ## License
 
