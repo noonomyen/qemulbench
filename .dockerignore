@@ -1,0 +1,30 @@
+# Git and ignore
+.git
+.gitignore
+.dockerignore
+
+# Cargo and host credentials
+.cargo/
+.cargo
+.env*
+*.local
+.local/
+
+# Build outputs
+target/
+build/
+out/
+config-temp/
+assets/
+
+# Temporary and log files
+*.tmp
+*.log
+*.swp
+*~
+*.bak
+
+# Documentation and IDE
+.vscode/
+.idea/
+.cache/

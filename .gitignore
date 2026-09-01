@@ -1,0 +1,44 @@
+# Rust build artifacts
+target/
+out/
+**/*.rs.bk
+
+# Intermediate build directories
+build/
+config-temp/
+
+# Compiled binary assets & payloads
+assets/
+
+# Temporary and backup files
+*.tmp
+*.log
+*.out
+*.err
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+*.core
+.gdb_history
+
+# Local and environment files
+.env
+.env.*
+*.local
+.local/
+local.mk
+
+# Python build caches
+__pycache__/
+*.pyc
+
+# IDE, Editor, and OS files
+.vscode/
+.idea/
+.cache/
+.clangd/
+.DS_Store
+Thumbs.db
